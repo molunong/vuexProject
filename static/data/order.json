@@ -1,0 +1,17 @@
+{
+  "code": 200,
+  "message": "获取成功",
+  "orderMessage": {
+      "ordernumber": "444444444444",
+      "orderstate": 3,
+      "carnumber": "广A19876",
+      "phonenumber": "13467768899",
+      "adress": "西乡塘三生三世十里桃花",
+      "descibe": "这是一    部好车哦,,,,",
+      "time": "2017-08-08 14:33"
+  },
+  "writerMessage": {
+      "grade": 4.6,
+      "phonenumber": "123453231"
+  }
+}

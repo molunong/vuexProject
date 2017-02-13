@@ -1,0 +1,11 @@
+{
+  "code": 200,
+  "message": "获取成功",
+  "infoMessage": {
+    "wx_name": "小生",
+    "username": "张三",
+    "picker_name": "先生",
+    "mobile": "",
+    "oldpwd": "321"
+  }
+}

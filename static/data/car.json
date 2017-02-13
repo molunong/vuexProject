@@ -1,0 +1,15 @@
+{
+  "code": 200,
+  "message": "获取成功",
+  "data": [
+    {
+      "carnumber": "桂A12345"
+    },
+    {
+      "carnumber": "广A19876"
+    },
+    {
+      "carnumber": "粤A16534"
+    }
+  ]
+}

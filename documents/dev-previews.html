@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2017-02-13 一 06:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="root" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org02e2258">1. 项目概述</a></li>
+<li><a href="#org4c2398d">2. 平台用户角色</a>
+<ul>
+<li><a href="#org99daece">2.1. 末端用户</a></li>
+<li><a href="#org9a3ea70">2.2. 维修团队负责人</a></li>
+<li><a href="#org96bc429">2.3. 维修团队工作人员</a></li>
+<li><a href="#org2ccab14">2.4. 周边商家负责人</a></li>
+<li><a href="#orgc5c0d80">2.5. 平台运营者</a></li>
+</ul>
+</li>
+<li><a href="#org36f7822">3. 系统组成</a>
+<ul>
+<li><a href="#orgd81ddfb">3.1. 微信公众号</a></li>
+<li><a href="#org995932b">3.2. 嘟嘟管家Android客户端</a></li>
+<li><a href="#org89ca0c4">3.3. 嘟嘟管家IOS客户端</a></li>
+</ul>
+</li>
+<li><a href="#orgc989f4f">4. 需求说明及概要设计</a>
+<ul>
+<li><a href="#org18034e4">4.1. M01 微信公众号</a>
+<ul>
+<li><a href="#org05719d3">4.1.1. M01U001 微信公众号菜单</a></li>
+<li><a href="#orgf7a1916">4.1.2. M01U002 微信公众号欢迎词</a></li>
+</ul>
+</li>
+<li><a href="#org6386ae8">4.2. M02 微信H5网站</a>
+<ul>
+<li><a href="#org12d13e7">4.2.1. SITEMAP</a></li>
+<li><a href="#org4e56470">4.2.2. M02U001 底部导航菜单</a></li>
+<li><a href="#orgd7da7c5">4.2.3. M02U002 Welcome页</a></li>
+<li><a href="#org4305126">4.2.4. M02U003 引导加入会员页</a></li>
+<li><a href="#orgecc4b44">4.2.5. M02U004 维修预约主页</a></li>
+</ul>
+</li>
+<li><a href="#org59e59c4">4.3. M03 代理商派单系统</a></li>
+<li><a href="#org93118e7">4.4. M04 Android客户端</a></li>
+<li><a href="#org29b27e2">4.5. M05 IOS客户端</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+#+ TITLE: 嘟嘟管家项目概要设计文档
+#+ STARTUP: indent
+</p>
+
+<div id="outline-container-org02e2258" class="outline-2">
+<h2 id="org02e2258"><span class="section-number-2">1</span> 项目概述</h2>
+</div>
+
+<div id="outline-container-org4c2398d" class="outline-2">
+<h2 id="org4c2398d"><span class="section-number-2">2</span> 平台用户角色</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-org99daece" class="outline-3">
+<h3 id="org99daece"><span class="section-number-3">2.1</span> 末端用户</h3>
+</div>
+<div id="outline-container-org9a3ea70" class="outline-3">
+<h3 id="org9a3ea70"><span class="section-number-3">2.2</span> 维修团队负责人</h3>
+</div>
+<div id="outline-container-org96bc429" class="outline-3">
+<h3 id="org96bc429"><span class="section-number-3">2.3</span> 维修团队工作人员</h3>
+</div>
+<div id="outline-container-org2ccab14" class="outline-3">
+<h3 id="org2ccab14"><span class="section-number-3">2.4</span> 周边商家负责人</h3>
+</div>
+<div id="outline-container-orgc5c0d80" class="outline-3">
+<h3 id="orgc5c0d80"><span class="section-number-3">2.5</span> 平台运营者</h3>
+</div>
+</div>
+
+<div id="outline-container-org36f7822" class="outline-2">
+<h2 id="org36f7822"><span class="section-number-2">3</span> 系统组成</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-orgd81ddfb" class="outline-3">
+<h3 id="orgd81ddfb"><span class="section-number-3">3.1</span> 微信公众号</h3>
+</div>
+
+<div id="outline-container-org995932b" class="outline-3">
+<h3 id="org995932b"><span class="section-number-3">3.2</span> 嘟嘟管家Android客户端</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>初步计划使用H5打包工具打包封装成Android客户端发布
+HBuilder工具研究（打包部分）</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org89ca0c4" class="outline-3">
+<h3 id="org89ca0c4"><span class="section-number-3">3.3</span> 嘟嘟管家IOS客户端</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>初步计划使用H5打包工具打包封装成IOS客户端发布
+HBuilder工具研究（打包部分）</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc989f4f" class="outline-2">
+<h2 id="orgc989f4f"><span class="section-number-2">4</span> 需求说明及概要设计</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-org18034e4" class="outline-3">
+<h3 id="org18034e4"><span class="section-number-3">4.1</span> M01 微信公众号</h3>
+<div class="outline-text-3" id="text-4-1">
+</div><div id="outline-container-org05719d3" class="outline-4">
+<h4 id="org05719d3"><span class="section-number-4">4.1.1</span> M01U001 微信公众号菜单</h4>
+<div class="outline-text-4" id="text-4-1-1">
+</div><ol class="org-ol"><li><a id="org57f58d4"></a>管家服务<br /><ol class="org-ol"><li><a id="org7f73684"></a>家庭维修预约<br /></li>
+<li><a id="org205f027"></a>上门洗车预约<br /></li>
+<li><a id="orga7ed244"></a>直饮水配送<br /></li>
+<li><a id="org993e98f"></a>新鲜蔬果配送<br /></li>
+<li><a id="orgb86a807"></a>更多&#x2026;&#x2026;<br /></li></ol></li>
+
+<li><a id="orgea26447"></a>会员中心<br /><ol class="org-ol"><li><a id="orgd9945fe"></a>全年免费项目<br /></li>
+<li><a id="orgc890798"></a>服务预约查询<br /></li>
+<li><a id="orgb58bf4a"></a>个人信息中心<br /></li></ol></li>
+
+<li><a id="orgba041a0"></a>商务合作<br /><ol class="org-ol"><li><a id="orgddbddb4"></a>维修团队加盟<br /></li>
+<li><a id="orga5d0b8e"></a>周边商家加盟<br /></li>
+<li><a id="org3ed7ef8"></a>了解嘟嘟管家<br /></li></ol></li></ol>
+</div>
+
+<div id="outline-container-orgf7a1916" class="outline-4">
+<h4 id="orgf7a1916"><span class="section-number-4">4.1.2</span> M01U002 微信公众号欢迎词</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>新关注用户首次进入后推送</li>
+<li>计划使用单图文页</li>
+<li><p>
+欢迎词标题：
+</p>
+<div class="org-src-container">
+<pre class="src src-c">            &#27426;&#36814;&#20351;&#29992;&#22047;&#22047;&#20415;&#27665;&#31649;&#23478;&#26381;&#21153;&#65281;
+            &#21482;&#38656;100&#20803;&#65292;52&#31181;&#23478;&#24237;&#32500;&#20462;&#39033;&#30446;&#65292;&#20840;&#24180;&#26080;&#38480;&#27425;&#25968;&#65292;&#20813;&#36153;&#19978;&#38376;&#26381;&#21153;&#65281;
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6386ae8" class="outline-3">
+<h3 id="org6386ae8"><span class="section-number-3">4.2</span> M02 微信H5网站</h3>
+<div class="outline-text-3" id="text-4-2">
+</div><div id="outline-container-org12d13e7" class="outline-4">
+<h4 id="org12d13e7"><span class="section-number-4">4.2.1</span> SITEMAP</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<div class="org-src-container">
+<pre class="src src-c">Welcome&#39029;
+ |--- Splash-<span style="color: #a45bad;">1</span> &#39029;  
+ |--- Splash-<span style="color: #a45bad;">2</span> &#39029; 
+ |--- Splash-<span style="color: #a45bad;">3</span> &#39029;
+&#39318;&#39029;
+&#32500;&#20462;
+ |--- &#24341;&#23548;&#21152;&#20837;&#20250;&#21592;&#39029;
+ |--- &#32500;&#20462;&#39044;&#32422;&#20027;&#39029;
+      |--- &#39044;&#32422;&#38468;&#21152;&#20449;&#24687;&#39029;
+      |--- &#39044;&#32422;&#24037;&#21333;&#23637;&#31034;&#39029;       
+&#27927;&#36710;
+ |--- &#27927;&#36710;&#39044;&#32422;&#20027;&#39029;
+      |--- &#27927;&#36710;&#24037;&#21333;&#25903;&#20184;&#39029;
+      |--- &#27927;&#36710;&#24037;&#21333;&#35814;&#24773;&#39029;
+&#21830;&#22478;
+ |--- &#21830;&#23478;&#26381;&#21153;&#20998;&#31867;&#20027;&#39029;
+ |--- &#21830;&#23478;&#20135;&#21697;&#21015;&#34920;&#39029;
+ |--- &#21608;&#36793;&#21830;&#23478;&#21015;&#34920;&#39029;
+ |--- &#21830;&#23478;&#20135;&#21697;&#35814;&#24773;&#39029;
+ |--- &#36141;&#29289;&#36710;&#39029;
+ |--- &#35746;&#21333;&#35814;&#24773;&#39029;
+ |--- &#35746;&#21333;&#25903;&#20184;&#39029;
+ |--- &#35746;&#21333;&#35780;&#20215;&#39029;
+&#25105;&#30340;
+ |--- &#20250;&#21592;&#20013;&#24515;&#20027;&#39029;
+      |--- &#20250;&#21592;&#20449;&#24687;&#39029;
+      |--- &#20250;&#21592;&#20303;&#22336;&#39029;
+            |--- &#26032;&#22686;&#20303;&#22336;&#39029;
+            |--- &#20303;&#22336;&#32534;&#36753;&#39029;
+      |--- &#25105;&#30340;&#35746;&#21333;&#39029;
+      |--- &#32500;&#20462;&#35760;&#24405;&#39029;
+      |--- &#27927;&#36710;&#35760;&#24405;&#39029;
+      |--- &#25105;&#30340;&#38065;&#21253;&#39029;
+      |--- &#26381;&#21153;&#26465;&#27454;&#39029;
+      |--- &#24120;&#35265;&#38382;&#39064;&#39029;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4e56470" class="outline-4">
+<h4 id="org4e56470"><span class="section-number-4">4.2.2</span> M02U001 底部导航菜单</h4>
+<div class="outline-text-4" id="text-4-2-2">
+</div><ol class="org-ol"><li><a id="orgabd8453"></a>首页<br /></li>
+<li><a id="org21ab78c"></a>维修<br /><div class="outline-text-5" id="text-4-2-2-2">
+<ul class="org-ul">
+<li>如果用户尚未成为会员，点击进入加入会员引导页（M02U003）;</li>
+<li>如果用户已经成功为员，点击直接进入维修预约主页(M02U004)；</li>
+<li>如果会员当前已经预约维修服务，点击进入维修预约工单详情；</li>
+</ul>
+</div></li>
+
+<li><a id="orgcb3620f"></a>洗车<br /></li>
+<li><a id="org7c3667f"></a>商城<br /></li>
+<li><a id="org3c51b54"></a>我的<br /></li></ol>
+</div>
+
+<div id="outline-container-orgd7da7c5" class="outline-4">
+<h4 id="orgd7da7c5"><span class="section-number-4">4.2.3</span> M02U002 Welcome页</h4>
+<div class="outline-text-4" id="text-4-2-3">
+<p>
+Welcome页作为一个首次登录或使用时的欢迎介绍，在不同终端各自功能不同。
+</p>
+</div>
+
+<ol class="org-ol"><li><a id="org521b21a"></a>微信端<br /><div class="outline-text-5" id="text-4-2-3-1">
+<ul class="org-ul">
+<li>微信端通过菜单项进入后会有一个初始化获取微信用户数据的过程（如或者用户昵称，OpenId等），同时也需要初始化数据，此时可以显示第一页，等待所有数据初始化完成，再进入后续功能页面；</li>
+</ul>
+</div></li>
+
+<li><a id="org3b9c940"></a>Android或IOS客户端<br /><div class="outline-text-5" id="text-4-2-3-2">
+<ul class="org-ul">
+<li>Android或IOS客户端，在APP初次安装时，及版本更新后，需要显示SPASH页（见SITEMAP，具体显示多少个SPASH，根据具体需要展示的广告或新功能介绍而定），使用左右滑动切换，最后一页一个按钮进入首页。</li>
+</ul>
+</div></li></ol>
+</div>
+
+<div id="outline-container-org4305126" class="outline-4">
+<h4 id="org4305126"><span class="section-number-4">4.2.4</span> M02U003 引导加入会员页</h4>
+<div class="outline-text-4" id="text-4-2-4">
+<ul class="org-ul">
+<li>点击底部导航菜单“维修”，如果当前用户尚未成为会员，则进入该页面；</li>
+<li>该页面是一个广告页，包括煽动人心的广告及52项会员免费维修服务列表，该页面右下角固定位置始终悬浮一个“加入会员”的按钮；</li>
+<li>52项会员免费服务项目列表采用平列展示，包括服务名称，服务概述（点击单行，在该下方可折叠显示服务内容概述），市场行情价，以及突出的显示“会员免费”；</li>
+<li>需要提供非会员的维修预约功能，即在本页左下角固定位置始终悬浮“试用预约”按钮，点击后同样进入维修预约主页；</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgecc4b44" class="outline-4">
+<h4 id="orgecc4b44"><span class="section-number-4">4.2.5</span> M02U004 维修预约主页</h4>
+<div class="outline-text-4" id="text-4-2-5">
+<ul class="org-ul">
+<li>点击底部导航菜单“维修”，如果当前用户已经成为会员，则进入该页面；</li>
+<li>该页面是一个广告页，包括煽动人心的广告及52项会员免费维修服务列表，该页面右下角固定位置始终悬浮一个“加入会员”的按钮；</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org59e59c4" class="outline-3">
+<h3 id="org59e59c4"><span class="section-number-3">4.3</span> M03 代理商派单系统</h3>
+</div>
+<div id="outline-container-org93118e7" class="outline-3">
+<h3 id="org93118e7"><span class="section-number-3">4.4</span> M04 Android客户端</h3>
+</div>
+<div id="outline-container-org29b27e2" class="outline-3">
+<h3 id="org29b27e2"><span class="section-number-3">4.5</span> M05 IOS客户端</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: root</p>
+<p class="date">Created: 2017-02-13 一 06:32</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
