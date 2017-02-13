@@ -9,7 +9,7 @@
     <div class="content content_st">
       <div class="row" style="margin: 0 auto;">			     					    
         <p class="p0"><img src="../../static/img/logo.png" alt="logo"/></p>
-      	<p class="p1">嘟嘟洗车</p>
+      	<p class="p1">洗车</p>
       	<p class="p2">你只需支付<span id="">10</span>元就可以完成预约,<br/>清洁专员将上门为您洗车。</p>
       	<p class="p3">￥10.0</p>			
 	  </div>

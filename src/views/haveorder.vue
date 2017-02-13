@@ -14,7 +14,7 @@
 							<img src="static/img/logo.png" style="width:70px;height: 70px;"/>
 						</div>
 						<div class="col-70 clear-margin" style="padding-left: 10px;">
-								<h4 class="margin-6" style="margin-top: 12px !important;">嘟嘟洗车</h4>
+								<h4 class="margin-6" style="margin-top: 12px !important;">洗车</h4>
 								<p class="down-p margin-6" >服务员已接单</p>
 						</div>
 				</div>

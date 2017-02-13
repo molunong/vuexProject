@@ -1,7 +1,7 @@
 {
   "name": "dudubutler_front",
   "version": "1.0.0",
-  "description": "嘟嘟管家前端项目",
+  "description": "管家前端项目",
   "author": "Talis Zhou",
   "private": true,
   "scripts": {

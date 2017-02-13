@@ -267,7 +267,7 @@ export default {
             wx.ready(function() {
                 console.log('wx.ready')
                 wx.onMenuShareTimeline({
-                    title: '嘟嘟管家，为您服务', // 分享标题
+                    title: '管家，为您服务', // 分享标题
                     link: 'http://dudu.gxbaimu.com/wxcallback/wxoauth1', // 分享链接
                     imgUrl: 'https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png', // 分享图标
                     success: function() {

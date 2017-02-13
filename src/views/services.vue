@@ -55,7 +55,7 @@
         
         <li class="item-content ">
           <div class="item-inner" @click="showText('state5')">
-            <div class="item-title" style="float: left;width: 90%;padding-left: 0.8rem;white-space: normal;"><a class="line">5、嘟嘟除了洗车还有什么服务？</a>
+            <div class="item-title" style="float: left;width: 90%;padding-left: 0.8rem;white-space: normal;"><a class="line">5、除了洗车还有什么服务？</a>
             	<div class="line2" id="state5" style="display: none;">
             		答：包含打蜡、加玻璃水，玻璃镀膜、去虫胶柏油、发动机清洗、精品内饰深清（预约）、至尊全车美容（预约），具体支持城市请参见APP。</div>
             </div>
@@ -87,7 +87,7 @@
         
          <li class="item-content " >
           <div class="item-inner" @click="showText('state8')" style="padding-top:0rem; padding-bottom: 0rem;">
-            <div class="item-title" style="float: left;width: 90%;padding-left: 0.8rem;white-space: normal;"><a class="line" >8、嘟嘟可以清洁车内吗？</a>
+            <div class="item-title" style="float: left;width: 90%;padding-left: 0.8rem;white-space: normal;"><a class="line" >8、可以清洁车内吗？</a>
             	<div class="line2" id="state8" style="display: none;">
             		答：请在下单时勾选“内饰清洗”服务，洗车技师到达后就会清洗车辆内饰，但请注意，此服务需要车主到达服务位置打开车门，请务必安排好时间。
             	</div>

@@ -13,7 +13,7 @@
 							<img src="../../static/img/logo.png" style="width:70px;height: 70px;"/>
 						</div>
 						<div class="col-70 clear-margin" style="padding-left: 10px;">
-								<h4 >嘟嘟洗车</h4>
+								<h4 >vuex练习</h4>
 						</div>
 				    </div>
 				    <!--头部logo-->
